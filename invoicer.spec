@@ -26,18 +26,18 @@ firm, które nie prowadz± gospodarki magazynowej.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir}/,%{_pixmapsdir}}
 
-install -d $RPM_BUILD_ROOT/opt/madar/%{name}.bin
-install -d $RPM_BUILD_ROOT%{_bindir}/%{name}
-install -d $RPM_BUILD_ROOT%{_desktopdir}/invoicer.desktop
-install -d $RPM_BUILD_ROOT%{_pixmapsdir}/invoicer_ico.png
+mv opt/madar/invoicer.bin opt/madar/invoicer
+install opt/madar/invoicer $RPM_BUILD_ROOT%{_bindir}
+install /usr/share/applications/invoicer.desktop  $RPM_BUILD_ROOT%{_desktopdir}/invoicer.desktop
+install usr/share/pixmaps/invoicer_ico.png $RPM_BUILD_ROOT%{_pixmapsdir}/invoicer_ico.png
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) /opt/madar/*
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_desktopdir}/invoicer.desktop
 %attr(755,root,root) %{_pixmapsdir}/invoicer_ico.png
