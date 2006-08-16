@@ -30,7 +30,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir}/,%{_pixmapsdir}}
 
 mv opt/madar/invoicer.bin opt/madar/invoicer
 install opt/madar/invoicer $RPM_BUILD_ROOT%{_bindir}
-install /usr/share/applications/invoicer.desktop  $RPM_BUILD_ROOT%{_desktopdir}/invoicer.desktop
+install usr/share/applications/invoicer.desktop  $RPM_BUILD_ROOT%{_desktopdir}/invoicer.desktop
 install usr/share/pixmaps/invoicer_ico.png $RPM_BUILD_ROOT%{_pixmapsdir}/invoicer_ico.png
 
 %clean
