@@ -1,9 +1,8 @@
-
 Summary:	Freeware invoicing application
 Summary(pl):	Darmowy system finansowo-ksiêgowy
 Name:		invoicer
 Version:	3
-Release:	0.1
+Release:	1
 License:	Freeware
 Group:		Productivity/Office/Finance
 Source0:	http://www.madar.com.pl/demo/%{name}.tar.gz
@@ -28,8 +27,7 @@ firm, które nie prowadz± gospodarki magazynowej.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir}/,%{_pixmapsdir}}
 
-mv opt/madar/invoicer.bin opt/madar/invoicer
-install opt/madar/invoicer $RPM_BUILD_ROOT%{_bindir}
+install opt/madar/invoicer.bin $RPM_BUILD_ROOT%{_bindir}/invoicer
 install usr/share/applications/invoicer.desktop  $RPM_BUILD_ROOT%{_desktopdir}/invoicer.desktop
 install usr/share/pixmaps/invoicer_ico.png $RPM_BUILD_ROOT%{_pixmapsdir}/invoicer_ico.png
 
