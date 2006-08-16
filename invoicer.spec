@@ -39,5 +39,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%attr(755,root,root) %{_desktopdir}/invoicer.desktop
-%attr(755,root,root) %{_pixmapsdir}/invoicer_ico.png
+%{_desktopdir}/invoicer.desktop
+%{_pixmapsdir}/invoicer_ico.png
