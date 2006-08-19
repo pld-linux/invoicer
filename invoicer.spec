@@ -4,13 +4,13 @@ Name:		invoicer
 Version:	3
 Release:	1
 License:	Freeware
-Group:		Productivity/Office/Finance
+Group:		X11/Applications
 Source0:	http://www.madar.com.pl/demo/%{name}.tar.gz
 # Source0-md5:	61843b1243aeff6b28870dbc99b10931
-URL:		http://www.emadar.com
+URL:		http://www.emadar.com/
 Requires:	desktop-file-utils
-Requires:	gdk-pixbuf
-Requires:	gtk+
+Requires:	gdk-pixbuf >= 0.7
+Requires:	gtk+ >= 1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,7 +25,7 @@ firm, które nie prowadz± gospodarki magazynowej.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir}/,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir},%{_pixmapsdir}}
 
 install opt/madar/invoicer.bin $RPM_BUILD_ROOT%{_bindir}/invoicer
 install usr/share/applications/invoicer.desktop  $RPM_BUILD_ROOT%{_desktopdir}/invoicer.desktop
