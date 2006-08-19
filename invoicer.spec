@@ -11,6 +11,7 @@ URL:		http://www.emadar.com/
 Requires:	desktop-file-utils
 Requires:	gdk-pixbuf >= 0.7
 Requires:	gtk+ >= 1.2
+ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
