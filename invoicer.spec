@@ -1,5 +1,5 @@
 Summary:	Freeware invoicing application
-Summary(pl):	Darmowy system finansowo-ksiêgowy
+Summary(pl.UTF-8):   Darmowy system finansowo-ksiÄ™gowy
 Name:		invoicer
 Version:	3
 Release:	1
@@ -17,9 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Freeware financial application for making invoice.
 
-%description -l pl
-Program pozwalaj±cy na wystawianie faktur VAT skierowany do ma³ych
-firm, które nie prowadz± gospodarki magazynowej.
+%description -l pl.UTF-8
+Program pozwalajÄ…cy na wystawianie faktur VAT skierowany do maÅ‚ych
+firm, ktÃ³re nie prowadzÄ… gospodarki magazynowej.
 
 %prep
 %setup -q -n %{name}
