@@ -1,5 +1,5 @@
 Summary:	Freeware invoicing application
-Summary(pl.UTF-8):   Darmowy system finansowo-księgowy
+Summary(pl.UTF-8):	Darmowy system finansowo-księgowy
 Name:		invoicer
 Version:	3
 Release:	1
